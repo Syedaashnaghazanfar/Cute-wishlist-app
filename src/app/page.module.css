@@ -1,0 +1,190 @@
+/* Main container styles */
+.container {
+  position: relative;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #9df0d7; 
+  overflow: hidden;
+}
+
+/* Title styles */
+.title {
+  font-size: 3rem;
+  color: #ff69b4; 
+  font-family: 'Cute Font', sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Input field style */
+.input {
+  padding: 10px;
+  border: 2px solid #ff69b4;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+/* Button section styles */
+.buttonSection {
+  display: flex;
+  gap: 10px;
+}
+
+/* Add and Subtract button styles */
+.addButton, .subtractButton {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Cute Font', sans-serif;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.addButton:hover, .subtractButton:hover {
+  background-color: #ff1493;
+  transform: scale(1.1);
+}
+
+/* Wish item styles */
+.wishItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(235, 73, 135, 0.945);
+}
+
+.wishText {
+  font-size: 1.2rem;
+  font-family: 'Cute Font', sans-serif;
+}
+
+.toggleButton {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: 'Cute Font', sans-serif;
+}
+
+.removeButton {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: 'Cute Font', sans-serif;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+
+/* flower style */
+.flower {
+  font-size: 4rem;
+  margin-top: 20px;
+}
+
+/* Animation for hearts */
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Styles for hearts */
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(240, 63, 116);
+  transform: rotate(45deg);
+  animation: float 5s infinite ease-in-out;
+  border-radius: 50%;
+}
+
+.heart:before, .heart:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color:  rgb(240, 63, 116);
+  border-radius: 50%;
+}
+
+.heart:before {
+  top: -10px;
+  left: 0;
+}
+
+.heart:after {
+  left: 10px;
+  top: 0;
+}
+
+/* Positioning hearts at different places */
+.heart:nth-child(1) {
+  left: 10%;
+  animation-duration: 6s;
+  animation-delay: 0s;
+}
+
+.heart:nth-child(2) {
+  left: 20%;
+  animation-duration: 8s;
+  animation-delay: 2s;
+}
+
+.heart:nth-child(3) {
+  left: 30%;
+  animation-duration: 10s;
+  animation-delay: 4s;
+}
+
+.heart:nth-child(4) {
+  left: 50%;
+  animation-duration: 7s;
+  animation-delay: 1s;
+}
+
+.heart:nth-child(5) {
+  left: 70%;
+  animation-duration: 9s;
+  animation-delay: 3s;
+}
+
+.heart:nth-child(6) {
+  left: 90%;
+  animation-duration: 6s;
+  animation-delay: 5s;
+}
+
+/*Ending text*/
+#text {
+  color: black;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+}
